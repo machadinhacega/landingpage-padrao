@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- Tipografia -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+        <title>landingpage</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="barra-navegacao">
+                <h3 class="marca">Lorem ipsum</h3>
+                <nav>
+                    <ul>
+                        <li><span onclick="document.querySelector('.secaoA').scrollIntoView({behavior:'smooth'})">Lorem ipsum</span></li>
+                        <li><span onclick="document.querySelector('.secaoB').scrollIntoView({behavior:'smooth'})">dolor sit</span></li>
+                        <li><span onclick="document.querySelector('.secaoC').scrollIntoView({behavior:'smooth'})">amet</span></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="home">
+                <div class="titulo">
+                    <p class="titulo-menor">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                    <h1 class="titulo-maior">elit sed do eiusmod tempor incididunt ut</h1>
+                </div>
+                <img src="./images/home.png" id="img-home">
+            </div>
+        </header>
+
+
+        <section class="container secaoA">
+            <img src="./images/montagem.png" id="img-montagem">
+            <div class="titulo">
+                <p class="titulo-menor">abore et dolore magna aliqua</p>
+                <h1 class="titulo-maior">Ut enim ad minim veniam, quis nostrud</h1>
+                <p class="texto">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <a class="clique-seta" href="">Lorem ipsum<img src="./images/seta.svg" id="img-seta"></a>    
+            </div>
+        </section>
+
+
+        
+        <section class="container secaoB">
+            <div class="fundo-cor">
+                <div class="onde-encontrar">
+                    <div class="titulo">
+                        <img src="./images/local.svg" id="img-local">
+                        <h1 class="titulo-maior"> Onde nos encontar</h1>
+                    </div>
+                    <div class="informacoes">
+                        <div class="enderecos">
+                            <p class="bold">Eu fugiat:</p>
+                            <p class="comum">Nulla pariatur e cepteur sint occaecat</p>
+                            <p class="comum">cupidatat non proident - 047-350-620</p>
+                        </div>
+                        <div class="enderecos">
+                            <p class="bold">Sunt in:</p>
+                            <p class="comum">culpa.qui@officia.com</p>
+                        </div>
+                        <div class="enderecos">
+                            <p class="bold">Deserunt:</p>
+                            <p class="comum">+55 85 9.9241.5421</p>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <a href=""><img src="./images/icon1.svg" id="img-icon-insta"></a>
+                        <a href=""><img src="./images/icon2.svg" id="img-icon-linkedin"></a>   
+                    </div>
+                </div>
+    
+                <div>
+                    <img src="./images/mapa.png" id="img-mapa">
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="container secaoC">
+            <h1 class="titulo-maior">Entre em contato com a gente</h1>
+            <div class="contato">
+                <form class="formulario-contato" id="formulario-contato" enctype="text/plain">
+                    <input type="text" id="nome" name="name" class="nome" placeholder="Nome" required>
+                    <input type="text" id="email" name="email" class="email" placeholder="E-mail" required>
+                    <input type="text" name="assunto" id="assunto" class="assunto" placeholder="Assunto" required>
+                    <textarea name="body" id="mensagem" class="mensagem" cols="30" rows="7" placeholder=""  required></textarea>
+                    <input type="submit" value="Enviar" class="botao botaoMensagem">
+                </form>
+                <p class="texto">exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            </div>
+        </section>
+
+
+
+    </body>    
+
+    <footer>
+        <p>Feito por Iza Machado</p>      
+    </footer>
+
+
+</html>
