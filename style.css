@@ -1,0 +1,293 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+/* 
+body > * {
+    border: 1px solid tomato;
+} */
+
+/*▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
+
+
+header{
+    background: #746A2B;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.marca{
+    font-size: 160%;
+}
+
+.barra-navegacao {
+    display: flex;    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #E1D3C3;
+    margin: 0% 5% 0 5%;
+    padding-top: 1%;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+li {
+    padding: 25px;
+    font-size: 115%;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.home > * {
+    color: #ffffff;
+}
+
+.home > * > :last-child {
+    text-shadow: 4px 3px 5px #414141;;
+}
+
+.titulo {
+    max-width: 50vw;
+    margin-right: -24%;
+    position: relative;
+}
+
+.titulo-menor{
+    font-size:130% ;
+    max-width: 24vw;
+    padding-left: 1%;
+    line-height: 140%;
+}
+
+.titulo-maior{
+    font-size: 420% ;
+    max-width: 50vw;    
+}
+
+.secaoA {
+    height: 85vh;
+    max-height: 85vh;
+    padding-top: 6%;
+    padding-left: 12%;
+    background: #FCFCFC;
+}
+
+
+.secaoA > * {
+    color: #746A2B;;
+}
+
+.secaoA > :last-child{
+    margin-left: 5%;
+    width: 40vw;
+}
+
+.secaoA > * > .titulo-maior{
+    line-height: 100%;
+}
+
+.secaoA > * > .titulo-menor{
+    font-size: 140%;
+    max-width: 50vw;
+}
+
+.secaoA > * > .texto{
+    margin-top: 3%;
+    margin-left: 1%;
+    line-height: 150%;
+    margin-bottom: 3%;
+}
+
+.secaoA > * > .clique-seta{
+    margin-left: 1%;
+    font-weight: 800;
+    text-decoration: none;
+    color: #746A2B;
+    align-items: flex-end;
+}
+
+#img-seta{
+    margin-left: 2%;
+}
+
+#img-montagem{
+    height: 84%;
+    max-height: 84%;
+}
+
+
+.secaoB {
+    padding-top: 8%;
+    /* padding-bottom: 8%; */
+    color: #ffffff;
+}
+
+.secaoB > .fundo-cor {
+    background: #746A2B;
+    padding-left: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.onde-encontrar {
+    padding-top: 8%;
+    width: 40%;
+    padding-bottom: 8%;
+}
+
+.onde-encontrar > .titulo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.onde-encontrar > .titulo > .titulo-maior {
+    width: 70%;
+    margin-left: 3%;
+    font-size: 380%;
+    line-height: 100%;
+}
+
+.onde-encontrar >  .informacoes > .enderecos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+
+.onde-encontrar > .informacoes {
+    margin-top: 7%;
+}
+
+.onde-encontrar > .informacoes > .enderecos >.bold {
+    font-weight: bold;
+    margin-right: 2%;
+}
+
+.onde-encontrar > .icons {
+    margin-top: 5%;
+}
+
+#img-mapa {
+    margin-top: 15%;
+    /* width: 30%; */
+    /* margin-left: -8%; */
+}
+
+
+.secaoC{
+    display: flex;
+    justify-content: center;
+    color: #746A2B;
+    margin-bottom: 8%;
+}
+
+.secaoC > .titulo-maior {
+    font-size: 260%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+}
+
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contato > .texto {
+    width: 26%;
+    line-height: 170%;
+    margin-left: 2%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background: #000000;
+    color: #ffffff;
+    padding: 2% 0 2% 0;
+
+}
+
+
+.formulario-contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    max-width: 35%;
+}
+
+.nome,
+.email,
+.assunto {
+    padding: 2% 0% 2% 2%;
+    box-sizing: border-box;
+    margin-bottom: 2%;
+}
+
+.nome, .email {
+    min-width: 49%; 
+    max-width: 49%;
+}
+
+.assunto {
+    min-width: 100%; 
+    max-width: 100%;
+
+}
+
+textarea { 
+    width: 100% ;
+    resize: none;
+    box-sizing: border-box;    
+}
+
+.botaoMensagem {
+    width: 30%;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.botao{
+    display: inline-block;
+    background:#746A2B; 
+    border: 1px solid#746A2B;
+    color: #F8F9F9;
+
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #3b3613;
+    border: 1px solid #3b3613;
+    cursor: pointer;
+}
+
+
