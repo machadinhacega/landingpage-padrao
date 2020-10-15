@@ -6,7 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/animations.css">
+        <link rel="stylesheet" type="text/css" href="./css/map.css">
+        <link rel="stylesheet" type="text/css" href="./css/media-meiatela.css">
+        <link rel="stylesheet" type="text/css" href="./css/media-mobile.css">
+
+
+        <!-- Biblioteca do mapa -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        
         <!-- Tipografia -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
         <title>landingpage</title>
@@ -14,24 +29,25 @@
 
     <body>
         <header>
-            <div class="barra-navegacao">
-                <h3 class="marca">Lorem ipsum</h3>
-                <nav>
-                    <ul>
-                        <li><span onclick="document.querySelector('.secaoA').scrollIntoView({behavior:'smooth'})">Lorem ipsum</span></li>
-                        <li><span onclick="document.querySelector('.secaoB').scrollIntoView({behavior:'smooth'})">dolor sit</span></li>
-                        <li><span onclick="document.querySelector('.secaoC').scrollIntoView({behavior:'smooth'})">amet</span></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="home">
-                <div class="titulo">
-                    <p class="titulo-menor">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                    <h1 class="titulo-maior">elit sed do eiusmod tempor incididunt ut</h1>
+            <main>
+                <div class="barra-navegacao">
+                    <h3 class="marca">Lorem ipsum</h3>
+                    <nav>
+                        <ul>
+                            <li><span onclick="document.querySelector('.secaoA').scrollIntoView({behavior:'smooth'})">Lorem ipsum</span></li>
+                            <li><span onclick="document.querySelector('.secaoB').scrollIntoView({behavior:'smooth'})">dolor sit</span></li>
+                            <li><span onclick="document.querySelector('.secaoC').scrollIntoView({behavior:'smooth'})">amet</span></li>
+                        </ul>
+                    </nav>
                 </div>
-                <img src="./images/home.png" id="img-home">
-            </div>
+                
+                <div class="home">
+                    <div class="titulo">
+                        <p class="titulo-menor">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                        <h1 class="titulo-maior">elit sed do eiusmod tempor incididunt ut</h1>
+                    </div>
+                </div>
+            </main>
         </header>
 
 
@@ -75,8 +91,9 @@
                     </div>
                 </div>
     
-                <div>
-                    <img src="./images/mapa.png" id="img-mapa">
+                <div class="map-container">
+                    <div id="mapid"></div>
+                    <!-- <img src="./images/mapa.png" id="img-mapa"> -->
                 </div>
             </div>
 
@@ -98,12 +115,12 @@
             </div>
         </section>
 
-
+        <script src="./scripts/map.js"></script>
 
     </body>    
 
     <footer>
-        <p>Feito por Iza Machado</p>      
+        <p>Desenvolvido por Iza Machado</p>      
     </footer>
 
 

@@ -1,0 +1,169 @@
+@media (max-width:600px) {
+    main{
+        /* background: none; */
+        background: url("../images/fundo-inicio.png") no-repeat 20vw 50vh / 70vh;
+        object-fit: initial;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main div {
+        margin: 0 2rem 0 2rem;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .home .titulo-maior,
+    .home .titulo-menor,
+    .marca{
+        margin: 0 0 0 0;
+        max-width:100% ;
+        width: 100%;
+    }
+
+    .marca{
+        margin: 3rem 0 3rem 0;
+        text-align: center;
+    }
+    .home .titulo-menor{
+        font-size: 2.2vh;
+    }
+    .home .titulo-maior{
+        font-size: 6vh;
+        /* text-shadow: none; */
+    }
+
+    .secaoA{
+        height: 145vh;
+        max-height: 145vh;
+    }
+
+    .secaoA > * > .titulo-menor {
+        font-size: 2.2vh;
+    }
+    .secaoA > * > .titulo-maior {
+        font-size: 4vh;
+    }
+
+    .secaoA .texto{
+        font-size: 2vh;
+    }
+
+    .secaoB .fundo-cor{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .onde-encontrar{
+        width: 100%;
+        height: 18vh;
+        max-height: 18vh;
+        margin: 0 0 0 0;
+        padding: 8vh 0 0 0;
+    }
+    
+    #img-local{
+        width: 7vh;
+        margin: 0 0 0 0;
+    }
+    
+    .onde-encontrar > .titulo {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .onde-encontrar > .titulo > .titulo-maior {
+        width: 100%;
+        max-width: 100%;
+        margin: 2vh 2vw 0 2vw;
+        font-size: 5vh;
+        line-height: 100%;
+    }
+
+    
+    .enderecos p {
+        font-size: 2vh;
+    }
+
+    .informacoes{
+        margin: 0 10vw 6vh 15vw;
+    }
+
+    .icons{
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .map-container{
+        border: 1px solid #B3DAE2;
+        border-radius: 2rem;
+        
+        align-self: center;
+        justify-self: center;
+
+        width: 90%;
+        max-width: 90%;
+        height: 30vh;
+        margin: 25vh 0 0 0;
+    }
+    
+    #mapid {
+        width: 100%;
+        max-width: 100%;
+        height: 30vh;
+        margin: 0 0 0 0;
+    }
+    
+    .map-container .leaflet-container {
+        border-bottom: 1px solid #DDE3F0;
+        border-radius: 1rem;
+    }
+
+    .titulo-maior{
+        width: 100%;
+        max-width: 100%;
+    }
+    .secaoC > .titulo-maior {
+        font-size: 4vh;
+        text-align: center;
+        margin: 5vh 5vw 5vh 5vw;
+
+    }
+
+    .contato {
+        display: grid;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .formulario-contato {
+        margin: 0 6vw 0 6vw;
+        max-width: 100%;
+    }
+
+    .contato > .texto {
+        width: 100%;
+        margin: 4vh 0 0 0;
+        padding: 0 6vw 0 6vw;
+    }
+
+    footer{
+        height: 5vh ;
+    }
+
+    footer p {
+        font-size: 1.7vh;
+        margin-top: .5vh;
+    }
+}

@@ -1,35 +1,36 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
+    
     font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, h3, h4, p {
-    margin: 0;
-}
+
 
 .container {
     display: flex;
     flex-wrap: wrap;
 }
 
-/*▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
-/* 
-body > * {
-    border: 1px solid tomato;
-} */
-
-/*▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲*/
-
 
 header{
     background: #746A2B;
     height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
+
+}
+
+main {
+    min-height: 100vh;
+    background: url("../images/fundo-inicio.png") no-repeat 110% 70% / 65vw;
+    object-fit: cover;
 }
 
 .marca{
     font-size: 160%;
+    margin-left: 8rem;
 }
 
 .barra-navegacao {
@@ -38,7 +39,6 @@ header{
     align-items: center;
     justify-content: space-between;
     color: #E1D3C3;
-    margin: 0% 5% 0 5%;
     padding-top: 1%;
 }
 
@@ -46,17 +46,29 @@ ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    margin-right: 4rem;
 }
 
 li {
     padding: 25px;
     font-size: 115%;
+    cursor: pointer;
+
+}
+
+li span:hover{
+    transition: border 0.2s;
+    -webkit-transition: border 0.2s;
+
+}
+
+li span:hover{
+    border-bottom: 1px solid #ffffff;
 }
 
 .home {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     align-items: center;
     margin-top: 2%;
 }
@@ -69,22 +81,27 @@ li {
     text-shadow: 4px 3px 5px #414141;;
 }
 
-.titulo {
-    max-width: 50vw;
-    margin-right: -24%;
-    position: relative;
-}
 
-.titulo-menor{
-    font-size:130% ;
+
+.home .titulo-menor{
+    margin: 7vw 0 0 8rem;
+    font-size: 1.3rem ;
     max-width: 24vw;
     padding-left: 1%;
     line-height: 140%;
 }
 
 .titulo-maior{
-    font-size: 420% ;
-    max-width: 50vw;    
+    /* font-size: 5.5vw; */
+    font-size: clamp(10vh, 4.5rem, 5.5vh) ;
+    max-width: 50vw; 
+    /* max-height: 50vh; */
+}
+
+.home .titulo-maior{
+    margin: 0 0 0 8rem;
+    width: 50vw ;
+    max-width: 50vw;
 }
 
 .secaoA {
@@ -102,11 +119,12 @@ li {
 
 .secaoA > :last-child{
     margin-left: 5%;
-    width: 40vw;
+    width: 38vw;
 }
 
 .secaoA > * > .titulo-maior{
     line-height: 100%;
+    font-size: 4.8vw;
 }
 
 .secaoA > * > .titulo-menor{
@@ -134,8 +152,10 @@ li {
 }
 
 #img-montagem{
-    height: 84%;
-    max-height: 84%;
+    height: 80vh;
+    max-height: 80vh;
+    max-width: 30vw;
+    object-fit: cover;
 }
 
 
@@ -153,6 +173,10 @@ li {
     width: 100%;
 }
 
+#img-local{
+    width: 7vw;
+}
+
 .onde-encontrar {
     padding-top: 8%;
     width: 40%;
@@ -168,7 +192,7 @@ li {
 .onde-encontrar > .titulo > .titulo-maior {
     width: 70%;
     margin-left: 3%;
-    font-size: 380%;
+    font-size: 4.8vw;
     line-height: 100%;
 }
 
@@ -188,14 +212,12 @@ li {
     margin-right: 2%;
 }
 
-.onde-encontrar > .icons {
-    margin-top: 5%;
+.enderecos p {
+    font-size: 1.3vw;
 }
 
-#img-mapa {
-    margin-top: 15%;
-    /* width: 30%; */
-    /* margin-left: -8%; */
+.onde-encontrar > .icons {
+    margin-top: 5%;
 }
 
 

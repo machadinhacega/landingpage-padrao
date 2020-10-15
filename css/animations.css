@@ -1,0 +1,36 @@
+@keyframes left-right {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.titulo-menor {
+    animation-name: left-right;
+    animation-duration: 600ms;
+}
+.titulo-maior {
+    animation-name: left-right;
+    animation-duration: 800ms;
+}
+
+@keyframes top-bottom {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.marca, ul {
+    animation-name: top-bottom;
+    animation-duration: 800ms;
+}
