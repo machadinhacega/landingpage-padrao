@@ -18,7 +18,7 @@ L
 
 // create icon
 const icon = L.icon({
-    iconUrl: "../images/icon-local.svg",
+    iconUrl: "./images/icon-local.svg",
     iconSize: [58,68],
     iconAnchor: [29, 68],
     popupAnchor: [170,2]
